@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B30596C122280BEC00FE9766 /* BaseSearchSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30596C022280BEC00FE9766 /* BaseSearchSegment.swift */; };
+		B35A295322240505009A2330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A295222240505009A2330 /* AppDelegate.swift */; };
+		B35A295522240505009A2330 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A295422240505009A2330 /* SearchViewController.swift */; };
+		B35A295822240505009A2330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35A295622240505009A2330 /* Main.storyboard */; };
+		B35A295D22240507009A2330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35A295C22240507009A2330 /* Assets.xcassets */; };
+		B35A296022240507009A2330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35A295E22240507009A2330 /* LaunchScreen.storyboard */; };
+		B35A296B22240508009A2330 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A296A22240508009A2330 /* ExtensionsTests.swift */; };
+		B35A297622240508009A2330 /* SearchApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35A297522240508009A2330 /* SearchApiUITests.swift */; };
+		B37F449F22251D61002C93C0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F449E22251D61002C93C0 /* SearchBar.swift */; };
+		B37F44A122252C7E002C93C0 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F44A022252C7E002C93C0 /* Keys.swift */; };
+		B37F44A422252F42002C93C0 /* LastFmSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F44A322252F42002C93C0 /* LastFmSearchModel.swift */; };
+		B37F44A622252F4E002C93C0 /* LastFmSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F44A522252F4E002C93C0 /* LastFmSearchRequest.swift */; };
+		B37F44A822252F5B002C93C0 /* LastFmSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F44A722252F5B002C93C0 /* LastFmSearchParser.swift */; };
+		B386935A22287791007AC6C0 /* ItunesSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386935922287791007AC6C0 /* ItunesSearchService.swift */; };
+		B386935C22287836007AC6C0 /* LastFmSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386935B22287836007AC6C0 /* LastFmSearchService.swift */; };
+		B386935E2228799B007AC6C0 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386935D2228799B007AC6C0 /* RootAssembly.swift */; };
+		B3869361222879FA007AC6C0 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3869360222879FA007AC6C0 /* CoreAssembly.swift */; };
+		B386936422287A4A007AC6C0 /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386936322287A4A007AC6C0 /* ServicesAssembly.swift */; };
+		B386936722287B29007AC6C0 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386936622287B29007AC6C0 /* PresentationAssembly.swift */; };
+		B386936922287EF9007AC6C0 /* SegmentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386936822287EF9007AC6C0 /* SegmentFactory.swift */; };
+		B3881C03222B09E900613D83 /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3881C02222B09E900613D83 /* String+Encoding.swift */; };
+		B3881C07222B1A8600613D83 /* ICanLoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3881C06222B1A8600613D83 /* ICanLoadMore.swift */; };
+		B3881C09222B2B7900613D83 /* TapImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3881C08222B2B7900613D83 /* TapImageDelegate.swift */; };
+		B398DE67222BC54100C76C72 /* RequestEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398DE66222BC54100C76C72 /* RequestEncodingTests.swift */; };
+		B398DE69222BC5AD00C76C72 /* SegmentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398DE68222BC5AD00C76C72 /* SegmentsTests.swift */; };
+		B398DE6C222BC60B00C76C72 /* ItunesSearchServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398DE6B222BC60B00C76C72 /* ItunesSearchServiceMock.swift */; };
+		B398DE6E222BC63500C76C72 /* LastFmSearchServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398DE6D222BC63500C76C72 /* LastFmSearchServiceMock.swift */; };
+		B398DE70222BC84500C76C72 /* ViewModelFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398DE6F222BC84500C76C72 /* ViewModelFactoryMock.swift */; };
+		B39EFB0E2225CC63008CE445 /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EFB0D2225CC63008CE445 /* UIImageView+Loader.swift */; };
+		B39EFB102225D09D008CE445 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EFB0F2225D09D008CE445 /* ViewModelFactory.swift */; };
+		B39EFB152225D1F4008CE445 /* ItunesSearchSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EFB142225D1F4008CE445 /* ItunesSearchSegment.swift */; };
+		B39EFB172225D212008CE445 /* LastFmSearchSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EFB162225D212008CE445 /* LastFmSearchSegment.swift */; };
+		B39EFB1C2225D35E008CE445 /* LastFmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39EFB1A2225D35E008CE445 /* LastFmTableViewCell.swift */; };
+		B39EFB1D2225D35E008CE445 /* LastFmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39EFB1B2225D35E008CE445 /* LastFmTableViewCell.xib */; };
+		B3ADDA5B222474AB007867EB /* ITunesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA59222474AB007867EB /* ITunesTableViewCell.swift */; };
+		B3ADDA5C222474AB007867EB /* ITunesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3ADDA5A222474AB007867EB /* ITunesTableViewCell.xib */; };
+		B3ADDA5F22247F05007867EB /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA5E22247F05007867EB /* NSObject+ClassName.swift */; };
+		B3ADDA6122248059007867EB /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6022248059007867EB /* SearchPresenter.swift */; };
+		B3ADDA6422248578007867EB /* RequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6322248578007867EB /* RequestSender.swift */; };
+		B3ADDA6622248595007867EB /* IRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6522248595007867EB /* IRequestSender.swift */; };
+		B3ADDA6A22248714007867EB /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6922248714007867EB /* IRequest.swift */; };
+		B3ADDA6C2224873B007867EB /* IParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6B2224873B007867EB /* IParser.swift */; };
+		B3ADDA6E2224878D007867EB /* ItunesSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6D2224878D007867EB /* ItunesSearchModel.swift */; };
+		B3ADDA70222487E8007867EB /* ItunesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA6F222487E8007867EB /* ItunesSearchRequest.swift */; };
+		B3ADDA7222248821007867EB /* ItunesSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA7122248821007867EB /* ItunesSearchParser.swift */; };
+		B3ADDA7422248EB9007867EB /* RequestsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADDA7322248EB9007867EB /* RequestsFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B35A296722240508009A2330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B35A294722240505009A2330 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35A294E22240505009A2330;
+			remoteInfo = SearchApi;
+		};
+		B35A297222240508009A2330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B35A294722240505009A2330 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35A294E22240505009A2330;
+			remoteInfo = SearchApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B30596C022280BEC00FE9766 /* BaseSearchSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSearchSegment.swift; sourceTree = "<group>"; };
+		B35A294F22240505009A2330 /* SearchApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35A295222240505009A2330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B35A295422240505009A2330 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B35A295722240505009A2330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B35A295C22240507009A2330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B35A295F22240507009A2330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B35A296122240507009A2330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35A296622240508009A2330 /* SearchApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35A296A22240508009A2330 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		B35A296C22240508009A2330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35A297122240508009A2330 /* SearchApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35A297522240508009A2330 /* SearchApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchApiUITests.swift; sourceTree = "<group>"; };
+		B35A297722240508009A2330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37F449E22251D61002C93C0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B37F44A022252C7E002C93C0 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B37F44A322252F42002C93C0 /* LastFmSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmSearchModel.swift; sourceTree = "<group>"; };
+		B37F44A522252F4E002C93C0 /* LastFmSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmSearchRequest.swift; sourceTree = "<group>"; };
+		B37F44A722252F5B002C93C0 /* LastFmSearchParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmSearchParser.swift; sourceTree = "<group>"; };
+		B386935922287791007AC6C0 /* ItunesSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchService.swift; sourceTree = "<group>"; };
+		B386935B22287836007AC6C0 /* LastFmSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmSearchService.swift; sourceTree = "<group>"; };
+		B386935D2228799B007AC6C0 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		B3869360222879FA007AC6C0 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		B386936322287A4A007AC6C0 /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		B386936622287B29007AC6C0 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
+		B386936822287EF9007AC6C0 /* SegmentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentFactory.swift; sourceTree = "<group>"; };
+		B3881C02222B09E900613D83 /* String+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
+		B3881C06222B1A8600613D83 /* ICanLoadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICanLoadMore.swift; sourceTree = "<group>"; };
+		B3881C08222B2B7900613D83 /* TapImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapImageDelegate.swift; sourceTree = "<group>"; };
+		B398DE66222BC54100C76C72 /* RequestEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEncodingTests.swift; sourceTree = "<group>"; };
+		B398DE68222BC5AD00C76C72 /* SegmentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentsTests.swift; sourceTree = "<group>"; };
+		B398DE6B222BC60B00C76C72 /* ItunesSearchServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchServiceMock.swift; sourceTree = "<group>"; };
+		B398DE6D222BC63500C76C72 /* LastFmSearchServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmSearchServiceMock.swift; sourceTree = "<group>"; };
+		B398DE6F222BC84500C76C72 /* ViewModelFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryMock.swift; sourceTree = "<group>"; };
+		B39EFB0D2225CC63008CE445 /* UIImageView+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
+		B39EFB0F2225D09D008CE445 /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		B39EFB142225D1F4008CE445 /* ItunesSearchSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchSegment.swift; sourceTree = "<group>"; };
+		B39EFB162225D212008CE445 /* LastFmSearchSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmSearchSegment.swift; sourceTree = "<group>"; };
+		B39EFB1A2225D35E008CE445 /* LastFmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmTableViewCell.swift; sourceTree = "<group>"; };
+		B39EFB1B2225D35E008CE445 /* LastFmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastFmTableViewCell.xib; sourceTree = "<group>"; };
+		B3ADDA59222474AB007867EB /* ITunesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesTableViewCell.swift; sourceTree = "<group>"; };
+		B3ADDA5A222474AB007867EB /* ITunesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITunesTableViewCell.xib; sourceTree = "<group>"; };
+		B3ADDA5E22247F05007867EB /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		B3ADDA6022248059007867EB /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		B3ADDA6322248578007867EB /* RequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSender.swift; sourceTree = "<group>"; };
+		B3ADDA6522248595007867EB /* IRequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestSender.swift; sourceTree = "<group>"; };
+		B3ADDA6922248714007867EB /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		B3ADDA6B2224873B007867EB /* IParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParser.swift; sourceTree = "<group>"; };
+		B3ADDA6D2224878D007867EB /* ItunesSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchModel.swift; sourceTree = "<group>"; };
+		B3ADDA6F222487E8007867EB /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
+		B3ADDA7122248821007867EB /* ItunesSearchParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchParser.swift; sourceTree = "<group>"; };
+		B3ADDA7322248EB9007867EB /* RequestsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B35A294C22240505009A2330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35A296322240508009A2330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35A296E22240508009A2330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B35A294622240505009A2330 = {
+			isa = PBXGroup;
+			children = (
+				B35A295122240505009A2330 /* SearchApi */,
+				B35A296922240508009A2330 /* SearchApiTests */,
+				B35A297422240508009A2330 /* SearchApiUITests */,
+				B35A295022240505009A2330 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B35A295022240505009A2330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B35A294F22240505009A2330 /* SearchApi.app */,
+				B35A296622240508009A2330 /* SearchApiTests.xctest */,
+				B35A297122240508009A2330 /* SearchApiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B35A295122240505009A2330 /* SearchApi */ = {
+			isa = PBXGroup;
+			children = (
+				B39EFB0C2225C4F1008CE445 /* PresentationLayer */,
+				B39EFB0B2225C4E7008CE445 /* ServiceLayer */,
+				B39EFB0A2225C4DA008CE445 /* CoreLayer */,
+				B35A295222240505009A2330 /* AppDelegate.swift */,
+				B386935D2228799B007AC6C0 /* RootAssembly.swift */,
+				B37F44A022252C7E002C93C0 /* Keys.swift */,
+				B35A295C22240507009A2330 /* Assets.xcassets */,
+				B35A295E22240507009A2330 /* LaunchScreen.storyboard */,
+				B35A296122240507009A2330 /* Info.plist */,
+			);
+			path = SearchApi;
+			sourceTree = "<group>";
+		};
+		B35A296922240508009A2330 /* SearchApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				B398DE6A222BC5E500C76C72 /* Mocks */,
+				B35A296A22240508009A2330 /* ExtensionsTests.swift */,
+				B398DE66222BC54100C76C72 /* RequestEncodingTests.swift */,
+				B398DE68222BC5AD00C76C72 /* SegmentsTests.swift */,
+				B35A296C22240508009A2330 /* Info.plist */,
+			);
+			path = SearchApiTests;
+			sourceTree = "<group>";
+		};
+		B35A297422240508009A2330 /* SearchApiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B35A297522240508009A2330 /* SearchApiUITests.swift */,
+				B35A297722240508009A2330 /* Info.plist */,
+			);
+			path = SearchApiUITests;
+			sourceTree = "<group>";
+		};
+		B37F449D22251D52002C93C0 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				B37F449E22251D61002C93C0 /* SearchBar.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		B37F44A222252F1D002C93C0 /* LastFMSearchRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B37F44A322252F42002C93C0 /* LastFmSearchModel.swift */,
+				B37F44A522252F4E002C93C0 /* LastFmSearchRequest.swift */,
+				B37F44A722252F5B002C93C0 /* LastFmSearchParser.swift */,
+			);
+			path = LastFMSearchRequest;
+			sourceTree = "<group>";
+		};
+		B386935F222879EE007AC6C0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3869360222879FA007AC6C0 /* CoreAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B386936222287A3C007AC6C0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B386936322287A4A007AC6C0 /* ServicesAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B386936522287B1B007AC6C0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B386936622287B29007AC6C0 /* PresentationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3881C0A222B36D800613D83 /* ItunesSearchService */ = {
+			isa = PBXGroup;
+			children = (
+				B386935922287791007AC6C0 /* ItunesSearchService.swift */,
+				B3ADDA68222486F0007867EB /* ITunesSearchRequest */,
+			);
+			path = ItunesSearchService;
+			sourceTree = "<group>";
+		};
+		B3881C0B222B36F500613D83 /* LastFmSearchService */ = {
+			isa = PBXGroup;
+			children = (
+				B386935B22287836007AC6C0 /* LastFmSearchService.swift */,
+				B37F44A222252F1D002C93C0 /* LastFMSearchRequest */,
+			);
+			path = LastFmSearchService;
+			sourceTree = "<group>";
+		};
+		B398DE6A222BC5E500C76C72 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B398DE6B222BC60B00C76C72 /* ItunesSearchServiceMock.swift */,
+				B398DE6D222BC63500C76C72 /* LastFmSearchServiceMock.swift */,
+				B398DE6F222BC84500C76C72 /* ViewModelFactoryMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B39EFB0A2225C4DA008CE445 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B386935F222879EE007AC6C0 /* Assembly */,
+				B3ADDA5D22247EE9007867EB /* Extensions */,
+				B3ADDA622224850C007867EB /* Network */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		B39EFB0B2225C4E7008CE445 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B386936222287A3C007AC6C0 /* Assembly */,
+				B3ADDA7522248FF8007867EB /* Services */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		B39EFB0C2225C4F1008CE445 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B386936522287B1B007AC6C0 /* Assembly */,
+				B39EFB112225D1C7008CE445 /* Segments */,
+				B37F449D22251D52002C93C0 /* SearchBar */,
+				B3ADDA582224746C007867EB /* Cells */,
+				B39EFB0F2225D09D008CE445 /* ViewModelFactory.swift */,
+				B3ADDA6022248059007867EB /* SearchPresenter.swift */,
+				B35A295422240505009A2330 /* SearchViewController.swift */,
+				B35A295622240505009A2330 /* Main.storyboard */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		B39EFB112225D1C7008CE445 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				B3881C06222B1A8600613D83 /* ICanLoadMore.swift */,
+				B30596C022280BEC00FE9766 /* BaseSearchSegment.swift */,
+				B39EFB142225D1F4008CE445 /* ItunesSearchSegment.swift */,
+				B39EFB162225D212008CE445 /* LastFmSearchSegment.swift */,
+				B386936822287EF9007AC6C0 /* SegmentFactory.swift */,
+			);
+			path = Segments;
+			sourceTree = "<group>";
+		};
+		B39EFB182225D32B008CE445 /* ItunesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADDA59222474AB007867EB /* ITunesTableViewCell.swift */,
+				B3ADDA5A222474AB007867EB /* ITunesTableViewCell.xib */,
+			);
+			path = ItunesTableViewCell;
+			sourceTree = "<group>";
+		};
+		B39EFB192225D343008CE445 /* LastFmTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B39EFB1A2225D35E008CE445 /* LastFmTableViewCell.swift */,
+				B39EFB1B2225D35E008CE445 /* LastFmTableViewCell.xib */,
+			);
+			path = LastFmTableViewCell;
+			sourceTree = "<group>";
+		};
+		B3ADDA582224746C007867EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B39EFB192225D343008CE445 /* LastFmTableViewCell */,
+				B39EFB182225D32B008CE445 /* ItunesTableViewCell */,
+				B3881C08222B2B7900613D83 /* TapImageDelegate.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B3ADDA5D22247EE9007867EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADDA5E22247F05007867EB /* NSObject+ClassName.swift */,
+				B39EFB0D2225CC63008CE445 /* UIImageView+Loader.swift */,
+				B3881C02222B09E900613D83 /* String+Encoding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3ADDA622224850C007867EB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADDA672224860D007867EB /* RequestManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B3ADDA672224860D007867EB /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADDA6922248714007867EB /* IRequest.swift */,
+				B3ADDA6B2224873B007867EB /* IParser.swift */,
+				B3ADDA6522248595007867EB /* IRequestSender.swift */,
+				B3ADDA6322248578007867EB /* RequestSender.swift */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		B3ADDA68222486F0007867EB /* ITunesSearchRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADDA6D2224878D007867EB /* ItunesSearchModel.swift */,
+				B3ADDA6F222487E8007867EB /* ItunesSearchRequest.swift */,
+				B3ADDA7122248821007867EB /* ItunesSearchParser.swift */,
+			);
+			path = ITunesSearchRequest;
+			sourceTree = "<group>";
+		};
+		B3ADDA7522248FF8007867EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3881C0B222B36F500613D83 /* LastFmSearchService */,
+				B3881C0A222B36D800613D83 /* ItunesSearchService */,
+				B3ADDA7322248EB9007867EB /* RequestsFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B35A294E22240505009A2330 /* SearchApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35A297A22240508009A2330 /* Build configuration list for PBXNativeTarget "SearchApi" */;
+			buildPhases = (
+				B35A294B22240505009A2330 /* Sources */,
+				B35A294C22240505009A2330 /* Frameworks */,
+				B35A294D22240505009A2330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchApi;
+			productName = SearchApi;
+			productReference = B35A294F22240505009A2330 /* SearchApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B35A296522240508009A2330 /* SearchApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35A297D22240508009A2330 /* Build configuration list for PBXNativeTarget "SearchApiTests" */;
+			buildPhases = (
+				B35A296222240508009A2330 /* Sources */,
+				B35A296322240508009A2330 /* Frameworks */,
+				B35A296422240508009A2330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35A296822240508009A2330 /* PBXTargetDependency */,
+			);
+			name = SearchApiTests;
+			productName = SearchApiTests;
+			productReference = B35A296622240508009A2330 /* SearchApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B35A297022240508009A2330 /* SearchApiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35A298022240508009A2330 /* Build configuration list for PBXNativeTarget "SearchApiUITests" */;
+			buildPhases = (
+				B35A296D22240508009A2330 /* Sources */,
+				B35A296E22240508009A2330 /* Frameworks */,
+				B35A296F22240508009A2330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35A297322240508009A2330 /* PBXTargetDependency */,
+			);
+			name = SearchApiUITests;
+			productName = SearchApiUITests;
+			productReference = B35A297122240508009A2330 /* SearchApiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B35A294722240505009A2330 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = i.varfolomeev;
+				TargetAttributes = {
+					B35A294E22240505009A2330 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B35A296522240508009A2330 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B35A294E22240505009A2330;
+					};
+					B35A297022240508009A2330 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B35A294E22240505009A2330;
+					};
+				};
+			};
+			buildConfigurationList = B35A294A22240505009A2330 /* Build configuration list for PBXProject "SearchApi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B35A294622240505009A2330;
+			productRefGroup = B35A295022240505009A2330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B35A294E22240505009A2330 /* SearchApi */,
+				B35A296522240508009A2330 /* SearchApiTests */,
+				B35A297022240508009A2330 /* SearchApiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B35A294D22240505009A2330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35A296022240507009A2330 /* LaunchScreen.storyboard in Resources */,
+				B39EFB1D2225D35E008CE445 /* LastFmTableViewCell.xib in Resources */,
+				B35A295D22240507009A2330 /* Assets.xcassets in Resources */,
+				B35A295822240505009A2330 /* Main.storyboard in Resources */,
+				B3ADDA5C222474AB007867EB /* ITunesTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35A296422240508009A2330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35A296F22240508009A2330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B35A294B22240505009A2330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3ADDA6C2224873B007867EB /* IParser.swift in Sources */,
+				B386935E2228799B007AC6C0 /* RootAssembly.swift in Sources */,
+				B3881C09222B2B7900613D83 /* TapImageDelegate.swift in Sources */,
+				B37F44A822252F5B002C93C0 /* LastFmSearchParser.swift in Sources */,
+				B37F44A122252C7E002C93C0 /* Keys.swift in Sources */,
+				B39EFB152225D1F4008CE445 /* ItunesSearchSegment.swift in Sources */,
+				B386935A22287791007AC6C0 /* ItunesSearchService.swift in Sources */,
+				B37F44A422252F42002C93C0 /* LastFmSearchModel.swift in Sources */,
+				B3ADDA6E2224878D007867EB /* ItunesSearchModel.swift in Sources */,
+				B3ADDA6A22248714007867EB /* IRequest.swift in Sources */,
+				B39EFB102225D09D008CE445 /* ViewModelFactory.swift in Sources */,
+				B386935C22287836007AC6C0 /* LastFmSearchService.swift in Sources */,
+				B37F44A622252F4E002C93C0 /* LastFmSearchRequest.swift in Sources */,
+				B3ADDA70222487E8007867EB /* ItunesSearchRequest.swift in Sources */,
+				B39EFB1C2225D35E008CE445 /* LastFmTableViewCell.swift in Sources */,
+				B386936422287A4A007AC6C0 /* ServicesAssembly.swift in Sources */,
+				B35A295522240505009A2330 /* SearchViewController.swift in Sources */,
+				B39EFB172225D212008CE445 /* LastFmSearchSegment.swift in Sources */,
+				B30596C122280BEC00FE9766 /* BaseSearchSegment.swift in Sources */,
+				B39EFB0E2225CC63008CE445 /* UIImageView+Loader.swift in Sources */,
+				B3881C07222B1A8600613D83 /* ICanLoadMore.swift in Sources */,
+				B37F449F22251D61002C93C0 /* SearchBar.swift in Sources */,
+				B3ADDA6622248595007867EB /* IRequestSender.swift in Sources */,
+				B3ADDA6422248578007867EB /* RequestSender.swift in Sources */,
+				B3ADDA7222248821007867EB /* ItunesSearchParser.swift in Sources */,
+				B386936722287B29007AC6C0 /* PresentationAssembly.swift in Sources */,
+				B3ADDA6122248059007867EB /* SearchPresenter.swift in Sources */,
+				B3881C03222B09E900613D83 /* String+Encoding.swift in Sources */,
+				B3869361222879FA007AC6C0 /* CoreAssembly.swift in Sources */,
+				B3ADDA7422248EB9007867EB /* RequestsFactory.swift in Sources */,
+				B3ADDA5F22247F05007867EB /* NSObject+ClassName.swift in Sources */,
+				B35A295322240505009A2330 /* AppDelegate.swift in Sources */,
+				B3ADDA5B222474AB007867EB /* ITunesTableViewCell.swift in Sources */,
+				B386936922287EF9007AC6C0 /* SegmentFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35A296222240508009A2330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B398DE69222BC5AD00C76C72 /* SegmentsTests.swift in Sources */,
+				B398DE6E222BC63500C76C72 /* LastFmSearchServiceMock.swift in Sources */,
+				B398DE6C222BC60B00C76C72 /* ItunesSearchServiceMock.swift in Sources */,
+				B398DE70222BC84500C76C72 /* ViewModelFactoryMock.swift in Sources */,
+				B398DE67222BC54100C76C72 /* RequestEncodingTests.swift in Sources */,
+				B35A296B22240508009A2330 /* ExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35A296D22240508009A2330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35A297622240508009A2330 /* SearchApiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B35A296822240508009A2330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35A294E22240505009A2330 /* SearchApi */;
+			targetProxy = B35A296722240508009A2330 /* PBXContainerItemProxy */;
+		};
+		B35A297322240508009A2330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35A294E22240505009A2330 /* SearchApi */;
+			targetProxy = B35A297222240508009A2330 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B35A295622240505009A2330 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B35A295722240505009A2330 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B35A295E22240507009A2330 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B35A295F22240507009A2330 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B35A297822240508009A2330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B35A297922240508009A2330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B35A297B22240508009A2330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SearchApi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SearchApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B35A297C22240508009A2330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SearchApi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SearchApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B35A297E22240508009A2330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SearchApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SearchApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchApi.app/SearchApi";
+			};
+			name = Debug;
+		};
+		B35A297F22240508009A2330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SearchApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SearchApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchApi.app/SearchApi";
+			};
+			name = Release;
+		};
+		B35A298122240508009A2330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SearchApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SearchApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SearchApi;
+			};
+			name = Debug;
+		};
+		B35A298222240508009A2330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SearchApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SearchApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SearchApi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B35A294A22240505009A2330 /* Build configuration list for PBXProject "SearchApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35A297822240508009A2330 /* Debug */,
+				B35A297922240508009A2330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35A297A22240508009A2330 /* Build configuration list for PBXNativeTarget "SearchApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35A297B22240508009A2330 /* Debug */,
+				B35A297C22240508009A2330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35A297D22240508009A2330 /* Build configuration list for PBXNativeTarget "SearchApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35A297E22240508009A2330 /* Debug */,
+				B35A297F22240508009A2330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35A298022240508009A2330 /* Build configuration list for PBXNativeTarget "SearchApiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35A298122240508009A2330 /* Debug */,
+				B35A298222240508009A2330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B35A294722240505009A2330 /* Project object */;
+}
